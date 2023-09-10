@@ -11,7 +11,7 @@ variables that started off as the same.
 #include <stdlib.h>
 #include <unistd.h>
 
-int main(int argc, char *argv[]) {
+int main() {
 int x = 100;
 printf("Before Fork (value:%d)\n", (int) x);
 int rc = fork();

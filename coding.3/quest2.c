@@ -10,7 +10,7 @@ Answer: From what I have seen, one process will write everything onto the file, 
 #include <unistd.h>
 #include <fcntl.h>
 
-int main(int argc, char *argv[]) {
+int main() {
 int desc = open("file.txt", O_WRONLY);
 int rc = fork();
 if (rc < 0) {

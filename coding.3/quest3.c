@@ -8,7 +8,7 @@ wait a given time will almost certainly make the child  complete first.
 #include <stdlib.h>
 #include <unistd.h>
 
-int main(int argc, char *argv[]) {
+int main() {
 int rc = fork();
 if (rc < 0) {
 // fork failed
