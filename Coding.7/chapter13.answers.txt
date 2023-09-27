@@ -1,0 +1,24 @@
+/****************************************************
+Josh Heigley
+
+Question 2: There are 8347 megabytes total available. 6588 megabytes of these are free. This makes sense if this is a machine with 8 GB of RAM. Not all of
+the RAM is available because of the stack, the heap, and the OS occupying space in memory.
+
+Question 4: When the program is running with a 100 byte array, the total available megabytes was still 8347, which makes sense as that number should remain
+the same as long as hardware stays the same. The number of megabytes that were free decreased to 6556 megabytes, which makes sense because along with the
+100 bytes that the memory array took up, there is also the space taken up by the process itself.
+
+Question 6: To get the process ID for my program, I used getpid() and printed it to screen inside the process. I used top to access other PIDs for other
+running programs.
+
+Question 7: Using pmap with different flags, you are able to see detailed information on any running processes, such as  permissions like read, write, and
+execute. It also showed things like  offset, mapping type and many other details on the memory mapping of each of the processes.
+In addition to the code, stack, and heap, modern address spaces also are made up of many other types of mapped memory due to increased need for complex
+memory that cannot always be determined at compile time.
+
+Question 8: As I increase the size of the array, the total memory usage, as well as the resident set size and dirty memory. This is what I would expect as
+more memory is being accessed, written to, and in general, utilized by the program as the size of the memory array increases. The only thing that surprised
+me is that the rate at which Dirty and RSS increased did not seam to be constant despite the rate of my input increasing being so. This is likely because
+at smaller array sizes, the program itself takes up a larger amount of the total memory relative to the memory array.
+
+******************************************************/
